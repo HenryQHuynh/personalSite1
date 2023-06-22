@@ -101,13 +101,14 @@ body {
 }
 
 .home-img img {
-   max-width: 450px;
+   max-width: 100vw;
+   height: auto;
    margin-right: -20px;
    padding: 1px;
    border-radius: 40px;
    opacity: 0;
-   animation: zoomIn 1s ease forwards;
-   animation-delay: 2s;
+   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+   animation-delay: 2s, 3s;
 }
 
 .social-media a {
@@ -211,5 +212,17 @@ body {
    100% {
       transform: scale(1);
       opacity: 1;
+   }
+}
+
+@keyframes floatImage {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-24px);
+   }
+   100% {
+      transform: translateY(0);
    }
 }
