@@ -37,6 +37,13 @@ span {
    color: var(--main-color);
 }
 
+h2 {
+   transition: .5s ease;
+   opacity: 0;
+   animation: slideTop 1s ease forwards;
+   animation-delay: .2s;
+}
+
 .header {
    position: fixed;
    top: 0;
@@ -203,6 +210,7 @@ span {
 .heading {
    text-align: center;
    font-size: 4.5rem;
+   margin-bottom: 1.5rem;
 }
 
 /* .heading span {
@@ -427,6 +435,7 @@ span {
 
 .portfolio {
    background: var(--bg-color);
+   padding-bottom: 1rem;
 }
 
 .portfolio h2 {
@@ -712,6 +721,19 @@ span {
    html {
       font-size: 55%;
    }
+
+   .portfolio {
+      padding-bottom: 10px;
+      margin-bottom: 3rem;
+   }
+   
+   .portfolio h2 {
+      margin-bottom: 3rem;
+   }
+
+   .portfolio-container {
+      grid-template-columns: repeat(2,1fr);
+   }
 }
 
 @media (max-width: 991px) {
@@ -724,7 +746,32 @@ span {
    }
 
    .home {
-      padding: 0 4%;
+      flex-direction: column;
+   }
+
+   .home-content h3 {
+      font-size: 2.6rem;
+   }
+
+   .home-content h1 {
+      font-size: 5rem;
+   }
+
+   .home-img img {
+      width: 70vw;
+      margin-top: 7rem;
+   }
+
+   .portfolio h2 {
+      margin-bottom: 3rem;
+   }
+
+   .portfolio-container {
+      grid-template-columns: repeat(2,1fr);
+   }
+
+   .contact {
+      min-height: auto;
    }
 
    .footer {
@@ -789,5 +836,100 @@ span {
    .navbar.active a {
       transform: translateX(0);
       transition-delay: .25s;
+   }
+
+   .home {
+      flex-direction: column;
+   }
+
+   .home-content h3 {
+      font-size: 2.6rem;
+   }
+
+   .home-content h1 {
+      font-size: 5rem;
+   }
+
+   .home-img img {
+      width: 70vw;
+      margin-top: 7rem;
+   }
+
+   .about {
+      flex-direction: column-reverse;
+   }
+
+   .about img {
+      width: 70vw;
+      margin-top: 2rem;
+   }
+
+   .portfolio h2 {
+      margin-bottom: 3rem;
+   }
+
+   .portfolio-container {
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media (max-width: 617px) {
+   .portfolio-container {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 520px) {
+   html {
+      font-size: 50%;
+   }
+
+   .home-content h3 {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .home-content h1 {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 462px) {
+   .home-content h1 {
+      font-size: 5.2rem;
+   }
+
+   .education {
+      padding: 10rem 4% 5rem 5%;
+   }
+
+   .contact form .input-box .input-field {
+      width: 100%;
+   }
+
+   .footer {
+      flex-direction: column-reverse;
+   }
+
+   .footer  p {
+      margin-top: 2rem;
+   }
+}
+
+@media (max-width: 371px) {
+   .home {
+      justify-content: center;
+   }
+
+   .home-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .home-content h1 {
+      font-size: 5rem;
    }
 }
