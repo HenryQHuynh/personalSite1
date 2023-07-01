@@ -1,6 +1,6 @@
 var typed = new Typed(".multiple-text", {
    strings: ["Fullstack Developer", "Quality Engineer", "Process Engineer", "Test Engineer"],
-   typeSpeed: 100,
+   typeSpeed: 50,
    backSpeed: 100,
    backDelay: 1000,
    loop: true
@@ -53,6 +53,6 @@ ScrollReveal({
  });
 
  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.education-row, .portfolio-box, .contact-form', { origin: 'bottom' });
+ ScrollReveal().reveal('.education-row, .skills-row, .portfolio-box, .contact-form, .footer', { origin: 'bottom' });
  ScrollReveal().reveal('.about-img', { origin: 'left' });
-
+ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
