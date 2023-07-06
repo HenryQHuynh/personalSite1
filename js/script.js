@@ -1,5 +1,14 @@
+// text loop for home page
 var typed = new Typed(".multiple-text", {
    strings: ["Fullstack Developer", "Quality Engineer", "Process Engineer", "Test Engineer"],
+   typeSpeed: 50,
+   backSpeed: 100,
+   backDelay: 1000,
+   loop: true
+})
+
+var typed = new Typed(".multiple-text2", {
+   strings: ["Quality Engineer", "Process Engineer", "Test Engineer", "Fullstack Developer"],
    typeSpeed: 50,
    backSpeed: 100,
    backDelay: 1000,
