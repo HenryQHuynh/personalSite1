@@ -276,31 +276,39 @@
    <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form class="contact-form" action="#">
+      <form class="contact-form" action="https://formsubmit.co/4436f541850e15186122c1686bc60d41" method="POST">
+         <!-- Honeypot -->
+         <input type="text"  name="_honey" style="display: none;">
+
+         <!-- Disable Captcha -->
+         <input type="hidden" name="_captcha" value="false">
+
+         <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+
          <div class="input-box">
             <div class="input-field">
-               <input type="text" placeholder="Full Name" required>
+               <input type="text" placeholder="Full Name" name="Full&nbsp;Name" required>
                <span class="focus"></span>
             </div>
             <div class="input-field">
-               <input type="text" placeholder="Email Address" required>
+               <input type="text" placeholder="Email Address" name="Email" required>
                <span class="focus"></span>
             </div>
          </div>
 
          <div class="input-box">
             <div class="input-field">
-               <input type="number" placeholder="Phone Number" required>
+               <input type="number" placeholder="Phone Number" name="Phone&nbsp;Number" required>
                <span class="focus"></span>
             </div>
             <div class="input-field">
-               <input type="text" placeholder="Email Subject" required>
+               <input type="text" placeholder="Email Subject" name="Email&nbsp;Subject">
                <span class="focus"></span>
             </div>
          </div>
 
          <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="Their&nbsp;Message" required></textarea>
             <span class="focus"></span>
          </div>
 
