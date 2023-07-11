@@ -3,51 +3,333 @@
 
 <head>
    <meta charset="UTF-8">
-
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Henry Huynh</title>
+   
+   <title>Henry Huynh's Portfolio</title>
+   <!-- Box Icons from boxicons -->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <link rel="stylesheet" href="styles.css">
+   <!-- CSS stylesheet -->
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- type.js from mattboldt -->
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-   <script src="script.js" async></script>
+   <!-- scroll reveal -->
+   <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+   <!-- js script file -->
+   <script src="js/script.js" async></script>
+
 </head>
 
 <body>
-
+   <!-- header section design -->
    <header class="header">
       <a href="#" class="logo">Portfolio</a>
 
+      <i class='bx bx-menu' id="menu-icon"></i>
+
       <nav class="navbar">
-         <a href="#" style="--i:1;" class="active">Home</a>
-         <a href="#" style="--i:2;">About</a>
-         <a href="#" style="--i:3;">Skills</a>
-         <a href="#" style="--i:4;">Portfolio</a>
-         <a href="#" style="--i:5;">Contact</a>
+         <a href="#home" style="--i:1;" class="active">Home</a>
+         <a href="#about" style="--i:2;">About</a>
+         <a href="#education" style="--i:3;">Education</a>
+         <a href="#skills" style="--i:4;">Skills</a>
+         <a href="#portfolio" style="--i:5;">Portfolio</a>
+         <a href="#contact" style="--i:6;">Contact</a>
+
+         <span class="active-nav"></span>
       </nav>
    </header>
 
-   <section class="home">
+   <!-- home section design -->
+   <section class="home" id="home">
       <div class="home-content">
          <h3>Hello there, It's Me</h3>
          <h1>Henry Huynh</h1>
          <h3>And I'm a <span class="multiple-text"></span></h3>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate optio hic aut adipisci debitis quo!</p>
+         <p>I am an ambitious, reliable, and hard-working tech enthusiast and detail-oriented engineer.</p>
          <div class="social-media">
-            <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
-            <a href="#" style="--i:8;"><i class='bx bxl-instagram'></i></a>
-            <a href="#" style="--i:9;"><i class='bx bxl-google-plus'></i></a>
-            <a href="#" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+            <!-- <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a> -->
+            <!-- <a href="#" style="--i:8;"><i class='bx bxl-instagram-alt'></i></a> -->
+            <!-- <a href="#" style="--i:9;"><i class='bx bxl-google-plus'></i></a> -->
+            <a href="https://www.linkedin.com/in/henryqhuynh/" target="_blank"  style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/HenryQHuynh" target="_blank" style="--i:11;"><i class='bx bxl-github'></i></a>
          </div>
-         <a href="#" class="btn">Download CV/Resume</a>
+         <a href="Assets/Resume/Huynh, Henry_Resume.pdf" target="_blank" class="btn">Download CV/Resume</a>
       </div>
 
       <div class="home-img">
-         <img src="Assets/Photos/LinkedIn Photo2.jpg" alt="">
+         <img src="Assets/Photos/LinkedIn Photo1.jpg" alt="">
       </div>
    </section>
    
+   <!-- about section design -->
+   <section class="about" id="about">
+      <div class="about-img">
+         <img src="Assets/Photos/LinkedIn Photo2.jpg" alt="">
+      </div>
 
-   
-   <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+      <div class="about-content">
+         <h2 class="heading">About <span>Me</span></h2>
+         <h3><span class="multiple-text2"></span></h3>
+         <p>I am an ambitious, reliable, and hard-working tech enthusiast and detail-oriented engineer. My interests have always made me explore the tech world and strive to improve and strengthen my skills.
+         <br><br>
+         For the past few years, I have worked as a Quality Engineer, Process Engineer, and Test Engineer. In these roles, I have handled various Corrective Action and Preventative Action reports, developed and adjusted procedural documents, and assisted in data collection for capital equipment.
+         <br><br>
+         I am excited to continue learning and shape my skills as a developer and aspiring engineer. I can provide support and insight into any quality-related subjects that the team may require. I have supported various management teams on quality checks and inspections for high-profiting products.</p>
+         <a href="about.html" class="btn">Read More</a>
+      </div>
+   </section>
+
+   <!-- education section design -->
+   <section class="education" id="education">
+      <h2 class="heading">My <span>Journey</span></h2>
+      <div class="education-row">
+         <div class="education-column">
+            <h3 class="title">Education</h3>
+
+            <div class="education-box">
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> Feb 2022 - Aug 2022</i></div>
+                     <h3>Fullstack Web Development Certification- FullStack Academy</h3>
+                     <p>Fullstack Web Development Certification program from FullStack Academy partnered with San Jose State University</p>
+                  </div>
+               </div>
+
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> Aug 2014 - May 2019</i></div>
+                     <h3>Bachelor's Degree- San Jose State University</h3>
+                     <p>Engineering Major: BS Industrial Technology, Manufacturing  Systems</p>
+                  </div>
+               </div>
+
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> Aug 2017 - May 2019</i></div>
+                     <h3>Business Minor - San Jose State University</h3>
+                     <p>Business Minor in Engineering Business Management</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="education-column">
+            <h3 class="title">Experience</h3>
+
+            <div class="education-box">
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> May 2021 - Jan 2023</i></div>
+                     <h3>Associate Test Engineer - Onto Innovation, Inc.</h3>
+                     <p>I worked to efficiently complete metrology tool production and testing cycles to ensure that the tool is performing in peak condition to exceed industry standards. I also provided support for customer accounts and their particular tool variants.</p>
+                  </div>
+               </div>
+
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> Jan 2020 - May 2021</i></div>
+                     <h3>Quality Process Engineer - A&D Precision, Inc.</h3>
+                     <p>I effectively executed the production process and ensure the quality of various manufactured parts in single item, Sub-Assembly, and Assembly productions</p>
+                  </div>
+               </div>
+
+               <div class="education-content">
+                  <div class="content">
+                     <div class="year"><i class='bx bxs-calendar'> July 2019 - Nov 2019</i></div>
+                     <h3>Jr. Manufacturing Engineer (Intern) - Goldleaf Scientific</h3>
+                     <p>I supported a small company in product CAM modeling, processing, and manufacturing.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- skills section design -->
+   <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      
+      <div class="skills-row">
+         <div class="skills-column">
+            <h3 class="title">Coding Skills</h3>
+
+            <div class="skills-box">
+               <div class="skills-content">
+                  <div class="progress">
+                     <h3>HTML & CSS <span>90%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+                  
+                  <div class="progress">
+                     <h3>Javascript <span>80%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+
+                  <div class="progress">
+                     <h3>Python <span>10%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+
+                  <div class="progress">
+                     <h3>AWS <span>15%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="skills-column">
+            <h3 class="title">Professional Skills</h3>
+
+            <div class="skills-box">
+               <div class="skills-content">
+                  <div class="progress">
+                     <h3>Web Development <span>75%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+                  
+                  <div class="progress">
+                     <h3>Process Development <span>85%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+
+                  <div class="progress">
+                     <h3>Quality Inspection <span>95%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+
+                  <div class="progress">
+                     <h3>ISO Audit <span>70%</span></h3>
+                     <div class="bar"><span></span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- portfolio section design -->
+   <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      
+      <div class="portfolio-container">
+         <div class="portfolio-box">
+            <img src="Assets/Photos/superHeroAPI.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>SuperHero API Search App</h4>
+               <p>Project is in development</p>
+               <p>Project utlizes HTML, CSS, JS, and a RestAPI</p>
+               <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="Assets/Photos/ghostRescue.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Ghost Rescue</h4>
+               <p>Project has planned updates</p>
+               <p>Project utlizes HTML, CSS, and JS</p>
+               <a href="https://project07-hh-04102022.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="Assets/Photos/pongGame.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Classic Pong Game</h4>
+               <p>Project utlizes HTML, CSS, and JS</p>
+               <a href="https://ponggamehh.netlify.app/" target="_blank" ><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="Assets/Photos/mixOrMatchGame.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Card Matching Game</h4>
+               <p>A Halloween themed project that utlizes HTML, CSS, and JS</p>
+               <a href="https://hauntingmatch.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="Assets/Photos/palindromeChecker.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Basic Palindrome Checker</h4>
+               <p>A simple Palindrome Checker project that utlizes HTML, CSS, and JS</p>
+               <a href="https://palindromecheckerhh.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="Assets/Photos/oldPersonalSite.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Web Design</h4>
+               <p>Sixth Project</p>
+               <a href="https://2202-ftb-pt-web-pt-hhuynh-20220220.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- contact section design -->
+   <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form class="contact-form" action="https://formsubmit.co/4436f541850e15186122c1686bc60d41" method="POST">
+         <!-- Honeypot -->
+         <input type="text"  name="_honey" style="display: none;">
+
+         <!-- Disable Captcha -->
+         <input type="hidden" name="_captcha" value="false">
+
+         <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+
+         <div class="input-box">
+            <div class="input-field">
+               <input type="text" placeholder="Full Name" name="Full&nbsp;Name" required>
+               <span class="focus"></span>
+            </div>
+            <div class="input-field">
+               <input type="text" placeholder="Email Address" name="Email" required>
+               <span class="focus"></span>
+            </div>
+         </div>
+
+         <div class="input-box">
+            <div class="input-field">
+               <input type="number" placeholder="Phone Number" name="Phone&nbsp;Number" required>
+               <span class="focus"></span>
+            </div>
+            <div class="input-field">
+               <input type="text" placeholder="Email Subject" name="Email&nbsp;Subject">
+               <span class="focus"></span>
+            </div>
+         </div>
+
+         <div class="textarea-field">
+            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="Their&nbsp;Message" required></textarea>
+            <span class="focus"></span>
+         </div>
+
+         <div class="btn-box btns">
+            <button type="submit" class="btn">Send Message</button>
+         </div>
+      </form>
+   </section>
+
+   <!-- footer design -->
+   <footer class="footer">
+      <div class="footer-text">
+         <p>Copyright &copy; 2023 by Henry Huynh | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+         <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+
 </body>
 </html>
